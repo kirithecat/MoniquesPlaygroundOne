@@ -9,11 +9,8 @@
 
 
 export function jacksTrickNumber(number) {
-    //get number of digits in the number
-    const numberOfDigits = number.toString().length;
-    //mulply number by 5 to the degree of digit number
+    const numberOfDigits = Math.abs(number).toString().length;
     const fiveToPowerOfDigits = Math.pow(5, numberOfDigits);
-    //multiply the actual number
     const result = number * fiveToPowerOfDigits;
 
     return result;
