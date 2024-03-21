@@ -1,4 +1,4 @@
-import { evenOrOdd } from "../EvenOrOdd.js";
+import { evenOrOdd } from "../evenOrOdd.js";
 import { equal } from 'assert';
 
 it('Even number test (2)', () => {
