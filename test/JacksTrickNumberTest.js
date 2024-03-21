@@ -1,5 +1,5 @@
 import { equal } from 'assert';
-import { jacksTrickNumber } from '../index.js';
+import { jacksTrickNumber } from '../JacksTrickNumber.js';
 
 it('single digit test (3)', function() {
     const result = jacksTrickNumber(3);
