@@ -37,3 +37,10 @@ it('Not an Isogram, same characters next to each other, different casing - GoOse
     equal(result, expectedResult);
 });
 
+//As per the descrription in the instructions, we assume an empty string is an isogram 
+it('An empty string is an isogram', () => {
+    const result = isIsogram('');
+    const expectedResult = true;
+    equal(result, expectedResult);
+});
+
