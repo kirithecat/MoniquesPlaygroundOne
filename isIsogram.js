@@ -1,10 +1,9 @@
 export function isIsogram(str) {
-    for (let i = 0; i < str.length; i++) {
-
+    for (let initialLetter = 0; initialLetter < str.length; initialLetter++) {
         const strNoCase = str.toLowerCase();
 
-        for (let j = i + 1; j < str.length; j++) {
-            if (strNoCase.charAt(i) == strNoCase.charAt(j)) {
+        for (let comparedLetter = initialLetter + 1; comparedLetter < str.length; comparedLetter++) {
+            if (strNoCase.charAt(initialLetter) === strNoCase.charAt(comparedLetter)) {
                 return false;
             }
         }
